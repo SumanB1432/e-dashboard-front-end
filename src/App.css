@@ -1,11 +1,28 @@
-.App {
+
+
+.nav-ui li{
+  display: inline-block;
+  padding: 10px;
+}
+.nav-ui li a{
+color: white;
+padding: 5px;
+text-decoration: none;
+}
+.nav-ui {
+  margin: 0px;
+  background-color: skyblue;
+  padding: 0;
+  text-decoration: none;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: skyblue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
