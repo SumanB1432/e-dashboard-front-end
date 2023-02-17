@@ -13,18 +13,18 @@ function Nav() {
   
   return (
     <div>
-        <ul className='nav-ui'>
+       {auth ? <ul className='nav-ui'>
             <li><Link to="/">Products</Link></li>
             <li><Link to="/add">Add Product</Link></li>
             <li> <Link to="/update">Update Product</Link></li>
             <li> <Link to="/profile">Profile</Link></li>
-            <li> {auth? <Link to="/signup" onClick={logout}>Logout</Link>:<Link to="/signup">Sign Up</Link>}</li>
-            <li> <Link to="/login">login</Link></li>
-            
-
-               
-            
+            <li><Link to="/signup" onClick={logout}>Logout</Link></li>
+            </ul>:
+        <ul className='nav-ui nav-right'>
+          <li><Link to="/signup">Sign Up</Link></li>
+           <li><li> <Link to="/login">login</Link></li></li>
         </ul>
+}
     </div>
   )
 }

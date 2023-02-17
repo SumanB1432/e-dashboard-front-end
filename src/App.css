@@ -64,6 +64,9 @@ text-decoration: none;
   cursor:pointer
 
 }
+.nav-right{
+  text-align: right;
+}
 
 
 
