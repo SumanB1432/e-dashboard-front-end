@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import SignUp from './components/SignUp';
+import Login from './components/Login';
 import PrivateComponent from './components/PrivateComponent';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -20,6 +21,8 @@ function App() {
         </Route>
 
         <Route path="/signup" element={<SignUp/>}>signup</Route>
+        <Route path="/login" element={<Login/>}>LonIn</Route>
+        
       </Routes>
       </BrowserRouter>
       <Footer/>

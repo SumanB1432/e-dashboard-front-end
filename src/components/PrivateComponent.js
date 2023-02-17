@@ -6,4 +6,4 @@ function PrivateComponent() {
     return auth?<Outlet/> :<Navigate to="/signup"/>
 }
 
-export default PrivateComponent
+export default PrivateComponent;

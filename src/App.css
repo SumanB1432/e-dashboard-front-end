@@ -41,6 +41,29 @@ text-decoration: none;
   border:1px solid ;
   cursor:pointer
 }
+.login{
+  margin-left: 30%;
+  margin-top: 100px;
+
+}
+
+.login-inputBox{
+  display: block;
+    margin: 20px;
+    padding: 5px;
+    width: 300px;
+    border: 1px solid skyblue;
+
+}
+.login-button{
+  margin:25px;
+  padding:10px;
+  width:100px;
+  background-color:skyblue;
+  border:1px solid ;
+  cursor:pointer
+
+}
 
 
 
