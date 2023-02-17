@@ -30,10 +30,10 @@ text-decoration: none;
     width: 300px;
     border: 1px solid skyblue;
 }
-.register{
+.register,.product{
   margin-left: 30%;
 }
-.signup-button{
+.signup-button, .add-button{
   margin:25px;
   padding:10px;
   width:100px;
@@ -89,6 +89,13 @@ text-decoration: none;
 
 .App-link {
   color: #61dafb;
+}
+
+.nav-logo{
+  width:35px;
+  margin-top: 3px;
+  margin-left: 20px;
+  float: left;
 }
 
 @keyframes App-logo-spin {
