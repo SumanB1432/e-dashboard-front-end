@@ -22,6 +22,26 @@ text-decoration: none;
   text-align: center;
   background-color: skyblue;
 }
+.inputBox{
+
+    display: block;
+    margin: 20px;
+    padding: 5px;
+    width: 300px;
+    border: 1px solid skyblue;
+}
+.register{
+  margin-left: 30%;
+}
+.signup-button{
+  margin:25px;
+  padding:10px;
+  width:100px;
+  background-color:skyblue;
+  border:1px solid ;
+  cursor:pointer
+}
+
 
 
 @media (prefers-reduced-motion: no-preference) {
