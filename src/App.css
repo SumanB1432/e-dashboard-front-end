@@ -16,7 +16,7 @@ text-decoration: none;
   text-decoration: none;
 }
 .footer {
-  position: absolute;
+  position:absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -33,7 +33,7 @@ text-decoration: none;
 .register,.product{
   margin-left: 30%;
 }
-.signup-button, .add-button{
+.signup-button, .add-button,.update-button{
   margin:25px;
   padding:10px;
   width:100px;
@@ -68,6 +68,25 @@ text-decoration: none;
   text-align: right;
 }
 
+.addproduct-val{
+  color:red;
+  margin-top: -20px;
+  display:block;
+  margin-left: 20px;
+}
+.product-list{
+  text-align: center;
+  margin-top: 50px;
+}
+.product-list ul li{
+  display: inline-block;
+  border: 1px solid skyblue;
+  padding:5px;
+  width:150px
+}
+.product-list ul{
+  margin: 0;
+}
 
 
 @media (prefers-reduced-motion: no-preference) {
@@ -96,6 +115,14 @@ text-decoration: none;
   margin-top: 3px;
   margin-left: 20px;
   float: left;
+}
+
+.search-product-box{
+  width:400px;
+  margin: 20px;
+  height:20px;
+  border:1px solid skyblue;
+  padding: 10px;
 }
 
 @keyframes App-logo-spin {
