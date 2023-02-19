@@ -7,6 +7,7 @@ import AddProduct from './components/AddProduct';
 import Productlist from './components/Productlist';
 import UpdateProduct from './components/UpdateProduct';
 import PrivateComponent from './components/PrivateComponent';
+import Profile from './components/Profile';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <Route path="/add" element={<AddProduct/>}></Route>
         <Route path="/update/:id" element={<UpdateProduct/>}></Route>
         <Route path="/logout" element={<h1>logout component</h1>}></Route>
-        <Route path="/profile" element={<h1>profile component</h1>}></Route>
+        <Route path="/profile" element={<Profile/>}></Route>
         </Route>
 
         <Route path="/signup" element={<SignUp/>}></Route>

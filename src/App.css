@@ -124,7 +124,31 @@ text-decoration: none;
   border:1px solid skyblue;
   padding: 10px;
 }
+.profile{
+  background-color: whitesmoke;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: skyblue;
+}
+.profile-logo{
+  border: 2px solid;
+  border-radius: 150%;
+  border-color: blue;
+  background-color: blue;
+  color: white;
 
+}
+.profile-welcome{
+  color: blueviolet;
+  
+}
+.profile-name{
+  color:blueviolet
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

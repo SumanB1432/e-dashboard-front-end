@@ -11,7 +11,11 @@ function Productlist() {
     },[])
 
     const getProduct = async()=>{
-        let result = await fetch('http://localhost:5000/get-product');
+        let result = await fetch('http://localhost:5000/get-product',{
+            headers:{
+                authorization: JSON.parse(localStorage.getItem('token'))
+            }
+        });
         result = await result.json();
         result = Array.from(result)
         setProducts(result);
@@ -21,7 +25,10 @@ function Productlist() {
 
     const deleteProduct=async(id)=>{
         let result = await fetch(`http://localhost:5000/product/${id}`,{
-        method:'Delete'
+        method:'Delete',
+        headers:{
+            authorization: JSON.parse(localStorage.getItem('token'))
+        }
     });
     result = await result.json();
     if(result){
@@ -34,7 +41,11 @@ function Productlist() {
     const searchHandle = async (event)=>{
         let key = event.target.value;
         if(key){
-            let result = await fetch(`http://localhost:5000/search/${key}`);
+            let result = await fetch(`http://localhost:5000/search/${key}`,{
+                headers:{
+                    authorization: JSON.parse(localStorage.getItem('token'))
+                }
+            });
             result = await result.json()
             if(result){
                 setProducts(result)
