@@ -30,7 +30,8 @@ function SignUp() {
         result = await result.json();
         console.warn(result)
         if (result) {
-            localStorage.setItem("user", JSON.stringify(result))
+            localStorage.setItem("user", JSON.stringify(result.User))
+            localStorage.setItem("token", JSON.stringify(result.auth))
             navigate("/")
 
         }
