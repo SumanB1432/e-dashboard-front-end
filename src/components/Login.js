@@ -17,7 +17,7 @@ function Login() {
 
     const handleLogin= async ()=>{
         console.warn(email,password)
-        let result = await fetch('http://localhost:5000/login',{
+        let result = await fetch('https://eedss.onrender.com/login',{
           method:'post',
           body:JSON.stringify({email,password}),
           headers: {

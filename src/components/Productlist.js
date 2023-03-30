@@ -11,7 +11,7 @@ function Productlist() {
     },[])
 
     const getProduct = async()=>{
-        let result = await fetch('http://localhost:5000/get-product',{
+        let result = await fetch('https://eedss.onrender.com/get-product',{
             headers:{
                 authorization: JSON.parse(localStorage.getItem('token'))
             }
@@ -24,7 +24,7 @@ function Productlist() {
     console.warn(products)
 
     const deleteProduct=async(id)=>{
-        let result = await fetch(`http://localhost:5000/product/${id}`,{
+        let result = await fetch(`https://eedss.onrender.com/product/${id}`,{
         method:'Delete',
         headers:{
             authorization: JSON.parse(localStorage.getItem('token'))
@@ -41,7 +41,7 @@ function Productlist() {
     const searchHandle = async (event)=>{
         let key = event.target.value;
         if(key){
-            let result = await fetch(`http://localhost:5000/search/${key}`,{
+            let result = await fetch(`https://eedss.onrender.com/search/${key}`,{
                 headers:{
                     authorization: JSON.parse(localStorage.getItem('token'))
                 }
